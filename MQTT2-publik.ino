@@ -11,9 +11,9 @@
 #define DHTTYPE DHT11 // DHT 11
 DHT dht(DHTPIN, DHTTYPE);
 
-#define wifi_ssid "Kue keju"
-#define wifi_password "1sampai100"
-#define mqtt_server "192.168.43.221"
+#define wifi_ssid "xxxxxxxxxxxxx"
+#define wifi_password "xxxxxxxxxxxxx"
+#define mqtt_server "192.168.xxx.xxx"
 
 #define humidity_topic "sensor/DHT11/humidity"
 #define temperature_celsius_topic "sensor/DHT11/temperature_celsius"
