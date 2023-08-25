@@ -1,3 +1,4 @@
+/**** Koneksi ke hivemq.cloud *******/
 #ifdef ESP8266
 #include <ESP8266WiFi.h>
 #else
@@ -17,13 +18,13 @@ DHTesp dht;
 const int led = 5; //Set LED pin as GPIO5
 
 /****** WiFi Connection Details *******/
-const char* ssid = "Kue keju";
-const char* password = "1sampai100";
+const char* ssid = "xxxxxxxxxxxxx";
+const char* password = "xxxxxxxxxxxxxxxx";
 
 /******* MQTT Broker Connection Details *******/
-const char* mqtt_server = "9d825969cc71448abe06f7cc904ec139.s2.eu.hivemq.cloud";
-const char* mqtt_username = "iot_server";
-const char* mqtt_password = "Labiot2022";
+const char* mqtt_server = "xxxxxxxxxxxxxxxxx.s2.eu.hivemq.cloud";
+const char* mqtt_username = "xxxxxxxxxxxxxserver";
+const char* mqtt_password = "xxxxxxxxxxxxxxxx";
 const int mqtt_port =8883;
 
 /**** Secure WiFi Connectivity Initialisation *****/
@@ -40,21 +41,6 @@ char msg[MSG_BUFFER_SIZE];
 
 static const char *root_ca PROGMEM = R"EOF(
 -----BEGIN CERTIFICATE-----
-MIIFJDCCBAygAwIBAgISBOfox8CbMIVdK2Q5Lb0w1t4yMA0GCSqGSIb3DQEBCwUA
-MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD
-EwJSMzAeFw0yMzA3MjcwNTI0MTJaFw0yMzEwMjUwNTI0MTFaMB8xHTAbBgNVBAMT
-FGNvbnNvbGUuaGl2ZW1xLmNsb3VkMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
-CgKCAQEA1zAuyj2nz2w2stp2q0qmb+bZ/ytNLXeVXBmznTxhtP4+XyhU+j7WapH1
-u9Dpk++Aygnq/Z5/8gsO+IrdZ1ND3iUC1zRPJw1cPWTJPpsBLvoeG72eWmC3rSEf
-bKBqqR9hbUB70LPmsUO0H8nlnlAUN43Ol3pT/BOhPb92Oy0zKj9EpKw/2trzZMYu
-ci6UUt8Z/z+TiKAocsP84PfXt9N1JHy76L44v3L4kSc33fM1rIwHtBzJ5x/K1hrj
-Uvd1MxBWJERwpG7RPWRbcIo2rDE4DGEmYJuU9C9beAO4gcVY0bw//i63A1BZImwH
-mULM/z4Vbk+/CMXFPhKvV1sNfpzgxQIDAQABo4ICRTCCAkEwDgYDVR0PAQH/BAQD
-AgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAA
-MB0GA1UdDgQWBBSipG82qkK3/rCKWplRHy90ZLfRkzAfBgNVHSMEGDAWgBQULrMX
-t1hWy65QCUDmH6+dixTCxjBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUHMAGGFWh0
-dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL3IzLmkubGVu
-Y3Iub3JnLzBOBgNVHREERzBFghRjb25zb2xlLmhpdmVtcS5jbG91ZIItZnJvbnRl
 bmQuY29uc29sZS5wb3J0YWwuZXVjMS5hd3MuaGl2ZW1xLmNsb3VkMBMGA1UdIAQM
 MAowCAYGZ4EMAQIBMIIBBAYKKwYBBAHWeQIEAgSB9QSB8gDwAHYAejKMVNi3LbYg
 6jjgUh7phBZwMhOFTTvSK8E6V6NS61IAAAGJlgTsLwAABAMARzBFAiEAsZoBAtKw
