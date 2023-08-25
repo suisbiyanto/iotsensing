@@ -1,3 +1,5 @@
+/**** Koneksi ke server local *******/
+
 #ifdef ESP8266
   #include <ESP8266WiFi.h>     /* WiFi library for ESP8266 */
 #else
